@@ -1,0 +1,24 @@
+﻿<Window x:Class="traffic_lights.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:traffic_lights"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="400">
+    <Grid x:Name="mainGrid">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Label x:Name="mainLabel" FontSize="30" Content="В ожидании" Width="200" Height="100" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button Content="Старт" Width="200" Height="100" FontSize="36" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="0" Grid.Column="1" Click="Button_Start" />
+        <Button Content="Стоп" Width="200" Height="100" FontSize="36" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Stop"/>
+        <Button Content="Сброс" Width="200" Height="100" FontSize="36" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Click="Button_Whait"/>
+    </Grid>
+</Window>
